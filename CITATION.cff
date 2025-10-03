@@ -1,0 +1,55 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: tune-n-distill
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Aarón
+    family-names: Galiano-Jiménez
+    email: aaron.galiano@ua.es
+    affiliation: >-
+      Universitat d'Alacant, Transducens research group,
+      Spain
+    orcid: 'https://orcid.org/0000-0002-8107-1411'
+  - given-names: Felipe
+    family-names: Sánchez-Martínez
+    email: fsanchez@dlsi.ua.es
+    affiliation: >-
+      Universitat d'Alacant, Transducens research group,
+      Spain
+    orcid: 'https://orcid.org/0000-0002-2295-2630'
+  - given-names: Víctor M.
+    family-names: Sánchez-Cartagena
+    affiliation: >-
+      Universitat d'Alacant, Transducens research group,
+      Spain
+    email: vmsanchez@dlsi.ua.es
+    orcid: 'https://orcid.org/0000-0001-9600-6885'
+  - given-names: Juan Antonio
+    family-names: Pérez-Ortiz
+    email: japerez@ua.es
+    affiliation: >-
+      Universitat d'Alacant, Transducens research group,
+      Spain
+    orcid: 'https://orcid.org/0000-0001-7659-8908'
+identifiers:
+  - type: url
+    value: 'https://aclanthology.org/2023.eamt-1.7/'
+repository-code: 'https://github.com/transducens/tune-n-distill'
+abstract: >-
+  This repository contains a pipeline to tune the mBART50
+  NMT pre-trained model to low-resource language pairs, and
+  then distill the resulting system to obtain lightweight
+  and more sustainable models. The pipeline allows training
+  lightweight models for the translation between English and
+  a specific low-resource language, even if mBART50 has not
+  been pre-trained with the low-resource language.
+keywords:
+  - neural machine translation
+  - fine-tuning
+  - knowledge distillation
+license: CC0-1.0
