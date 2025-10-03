@@ -121,3 +121,43 @@ Container directories:
 The different steps of the process will be stored in the directory indicated for the experiment (```--experiment-dir```).
 You can find the resulting BLEU and the best mBART50 model in the file  ```/experiments/$experiment-dir/fine_tuning.result```.
 In addition, each student has in its directory a file with its BLEU, chrF++ and spBLEU.
+
+## Citing this work
+
+If you use this repository as part of your developments, please cite it as follows:
+
+```
+@inproceedings{galiano-jimenez-etal-2023-exploiting,
+    title = "Exploiting large pre-trained models for low-resource neural machine translation",
+    author = "Galiano-Jim{\'e}nez, Aar{\'o}n  and
+      S{\'a}nchez-Mart{\'i}nez, Felipe  and
+      S{\'a}nchez-Cartagena, V{\'i}ctor M.  and
+      P{\'e}rez-Ortiz, Juan Antonio",
+    editor = "Nurminen, Mary  and
+      Brenner, Judith  and
+      Koponen, Maarit  and
+      Latomaa, Sirkku  and
+      Mikhailov, Mikhail  and
+      Schierl, Frederike  and
+      Ranasinghe, Tharindu  and
+      Vanmassenhove, Eva  and
+      Vidal, Sergi Alvarez  and
+      Aranberri, Nora  and
+      Nunziatini, Mara  and
+      Escart{\'i}n, Carla Parra  and
+      Forcada, Mikel  and
+      Popovic, Maja  and
+      Scarton, Carolina  and
+      Moniz, Helena",
+    booktitle = "Proceedings of the 24th Annual Conference of the European Association for Machine Translation",
+    month = jun,
+    year = "2023",
+    address = "Tampere, Finland",
+    publisher = "European Association for Machine Translation",
+    url = "https://aclanthology.org/2023.eamt-1.7/",
+    pages = "59--68",
+    abstract = "Pre-trained models have drastically changed the field of natural language processing by providing a way to leverage large-scale language representations to various tasks. Some pre-trained models offer general-purpose representations, while others are specialized in particular tasks, like neural machine translation (NMT). Multilingual NMT-targeted systems are often fine-tuned for specific language pairs, but there is a lack of evidence-based best-practice recommendations to guide this process. Moreover, the trend towards even larger pre-trained models has made it challenging to deploy them in the computationally restrictive environments typically found in developing regions where low-resource languages are usually spoken. We propose a pipeline to tune the mBART50 pre-trained model to 8 diverse low-resource language pairs, and then distil the resulting system to obtain lightweight and more sustainable models. Our pipeline conveniently exploits back-translation, synthetic corpus filtering, and knowledge distillation to deliver efficient, yet powerful bilingual translation models 13 times smaller than the original pre-trained ones, but with close performance in terms of BLEU."
+}
+```
+
+A `CITATION.cff` file is also included in this repository.
